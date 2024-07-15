@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  color: #333;
+}
+img{
+  max-width: 100%;
+  margin-top: 40px;
+}
+a{
+  cursor: pointer;
+}
+main{
+  padding: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+
+}
+header a{
+  text-decoration: none;
+  color:inherit;
+}
+header a.logo{
+  font-weight: bold;
+}
+header nav{
+  display: flex;
+  gap: 15px;
+}
+div.post{
+  display: grid;
+  grid-template-columns:1fr;
+  /* grid-template-columns: 0.9fr 1.1fr; */
+  gap: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width:768px) {
+  div.post{
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+div.post div.texts{
+  
+  margin: 0;
+  font-size: 1rem;
+}
+div.post div.texts a{
+  text-decoration: none;
+  color:inherit;
+}
+div.post p.info{
+  margin: 6px 0;
+  color: #888;
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+div.post p.info a.authot{
+  color: inherit;
+
+}
+div.post p.summary{
+  margin:10px 0;
+  line-height: 1.5rem;
+
+}
+form.login form.register{
+  max-width: 100px;
+  margin: 0;
+
+}
+input{
+  display: block;
+  margin:20px auto;
+  margin-bottom:8px;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  border: 3px;
+  background-color: black;
+  border-bottom: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+button{
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  background-color: #555;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+}
+h1{
+  text-align: center;
+}
+div.page-post div.image img{
+  padding-left: 70px;
+}
+div.page-post h1{
+  text-align: center;
+  margin: 10px 0 5px;
+}
+div.page-post time{
+  text-align: center;
+  display: block;
+  font-size: 0.7rem;
+  color: #aaa;
+
+}
+div.page-post div.author{
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.edit-row{
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+div.page-post a.edit-btn{
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+
+}
+a svg{
+  height: 20px;
+}
